@@ -28,6 +28,10 @@ During my bachelor’s studies, I built a custom quadcopter from scratch and dev
 
 > ⚠️ **Note:** This project was developed early in my academic journey. From today's perspective, the code quality and software architecture are no longer up to my current standards.
 
+<p align="left">
+  <img src="images/quadcopter.jpg" alt="quadcopter_photo" width="200"/>
+</p>
+
 #### 🔗 Related Repositories
 
 | Repository | Description |
