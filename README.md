@@ -4,17 +4,6 @@
 
 I'm passionate about building robust embedded systems and intelligent control architectures. My work bridges low-level firmware and high-level algorithm development — from real-time embedded C/C++ systems to model-based design with Simulink.
 
-### 💼 What I Do
-
-**🔧 Embedded Software Development**
-- Design and implementation of efficient, modular embedded software architectures (C/C++)
-- CI/CD setup using Python, CMake, and Jenkins
-- Automated testing infrastructure for continuous software quality assurance
-
-**📐 Model-Based Design**
-- Rapid control prototyping and algorithm development for robotic systems using Matlab/Simulink
-- Development of automation frameworks for large-scale modular Simulink projects
-
 ---
 
 You can also find me on [LinkedIn](https://www.linkedin.com/in/stefan-schlee-9b67aa227/)  
@@ -34,12 +23,32 @@ During my bachelor’s studies, I built a custom quadcopter from scratch and dev
 
 #### 🔗 Related Repositories
 
-| Repository | Description |
-|------------|--------------|
-| [Quadcopter Firmware](https://github.com/StefanSchlee/Quadrokopter_V2) | This is the main repository for the firmware |
-| [MPU9250_SPI](https://github.com/StefanSchlee/MPU9250_SPI) | Driver for the MPU9250 inertial measurement unit (IMU) |
-| [IMU Kalman Filter](https://github.com/StefanSchlee/IMU_KalmanFilter/tree/master) | Kalman filter for state estimation |
-| [Digital Filter Lib](https://github.com/StefanSchlee/DigitalFilter/tree/master) | Library with digital filters |
+| Repository                                                                        | Description                                            |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| [Quadcopter Firmware](https://github.com/StefanSchlee/Quadrokopter_V2)            | This is the main repository for the firmware           |
+| [MPU9250_SPI](https://github.com/StefanSchlee/MPU9250_SPI)                        | Driver for the MPU9250 inertial measurement unit (IMU) |
+| [IMU Kalman Filter](https://github.com/StefanSchlee/IMU_KalmanFilter/tree/master) | Kalman filter for state estimation                     |
+| [Digital Filter Lib](https://github.com/StefanSchlee/DigitalFilter/tree/master)   | Library with digital filters                           |
+
+---
+### 📁 Python Stock Analysis
+
+[![Tests](https://github.com/StefanSchlee/Stock-analysis/actions/workflows/python-tests.yml/badge.svg)](https://github.com/StefanSchlee/Stock-analysis/actions/workflows/python-tests.yml)
+
+This project is inspired by existing investor tools (for example, [Aktienfinder](https://aktienfinder.net) and [Eulerpool](https://eulerpool.com)) that visualize price charts and fundamental data using intuitive plots. The goal is to help investors quickly assess whether a stock appears undervalued based on the available data.
+
+I started this project because I was frequently unsatisfied with available tools — no single website provided all the features I wanted, and some useful features were hidden behind paywalls. For example, logarithmic plots of price and fundamental data are rarely available together.
+
+<p align="left">
+  <img src="images/Full_chart.png" alt="full_chart" width="400"/>
+</p>
+<p align="left">
+  <img src="images/NetIncome.png" alt="net_income" width="200"/>
+  <img src="images/FairValue.png" alt="fair_value" width="200"/>
+</p>
+
+#### 🔗 Repository
+[Stock Analysis](https://github.com/StefanSchlee/Stock-analysis)
 
 ---
 ### 📁 Python Package Demo
@@ -55,19 +64,3 @@ The demo package includes a single module with a simple `square(x)` function as 
 
 #### 🔗 Repository
 [Python_Testing_Demo](https://github.com/StefanSchlee/Python_Testing_CI_Demo/blob/master/src/MyPackage/MyModule.py)
-
-
-<!--
-**StefanSchlee/StefanSchlee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
