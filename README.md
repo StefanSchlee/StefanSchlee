@@ -11,6 +11,22 @@ Feel free to explore my projects below — many of them are inspired by my acade
 
 ## 🗂️ Projects Overview
 
+### 📂 ESP32-S3 Edge AI Person Detection
+
+This project runs on an ESP32-S3 with a camera module. The goal was to learn about running AI models in embedded edge systems using TensorFlow Lite Micro. I leveraged the dual-core hardware to efficiently distribute the workload: One core handles the processing pipeline: capturing images, preprocessing, inference with a person detection CNN (from TensorFlow examples), and pushing results into a double buffer in shared memory. The other core runs a local webserver that displays live images and classification results.
+
+<p align="left">
+  <img src="images/ESP_person_detection_architecture.drawio.svg" alt="architecture" width="400"/>
+</p>
+<p align="left">
+  <img src="images/Person_detection_example.png" alt="website screenshot" width="300"/>
+</p>
+
+#### 🔗 Related Repositories
+[ESP32-S3 AI Project](https://github.com/StefanSchlee/placeholder-repo)
+
+---
+
 ### 📂 Quadcopter Flight Controller (ESP32-Based)
 
 During my bachelor’s studies, I built a custom quadcopter from scratch and developed a flight controller firmware running on an ESP32. The controller received inputs from an RC receiver, fused IMU sensor data using a Kalman filter to estimate the current flight attitude, and applied a cascaded PID controller to compute motor setpoints. These were output as PWM signals to control four brushless motors. Additional sensors included a GPS receiver and barometer for extended navigation data. The system also streamed real-time telemetry via Bluetooth to a PC for monitoring and analysis.
