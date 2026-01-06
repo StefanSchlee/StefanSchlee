@@ -13,14 +13,19 @@ Feel free to explore my projects below — many of them are inspired by my acade
 
 ### 📂 ESP32-S3 Edge AI Person Detection
 
-This project runs on an ESP32-S3 with a camera module. The goal was to learn about running AI models in embedded edge systems using TensorFlow Lite Micro. I leveraged the dual-core hardware to efficiently distribute the workload: One core handles the processing pipeline: capturing images, preprocessing, inference with a person detection CNN (from TensorFlow examples), and pushing results into a double buffer in shared memory. The other core runs a local webserver that displays live images and classification results.
+This project implements real-time person detection on an ESP32-S3 with a camera module using **TensorFlow Lite Micro**. It explores how CNN-based vision models can run efficiently on constrained edge devices.
 
-<p align="left">
+The ESP32-S3’s dual-core architecture is used to split the workload:
+
+- **Core 1:** Handles image capture, preprocessing, inference, and writes results to a shared double buffer.  
+- **Core 2:** Runs a lightweight web server that streams live images and displays detection results.
+
+This setup enables smooth visualization while keeping the inference pipeline running continuously.
+
+<div style="display: flex; gap: 20px; align-items: flex-start;">
   <img src="images/ESP_person_detection_architecture.drawio.svg" alt="architecture" width="400"/>
-</p>
-<p align="left">
   <img src="images/Person_detection_example.png" alt="website screenshot" width="300"/>
-</p>
+</div>
 
 #### 🔗 Related Repositories
 [ESP32-S3 AI Project](https://github.com/StefanSchlee/placeholder-repo)
